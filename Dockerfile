@@ -17,7 +17,7 @@ COPY requirements.txt /tmp
 WORKDIR /tmp
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r ./requirements.txt
-RUN python -m nltk.downloader averaged_perceptron_tagger cmudict
+RUN python -m nltk.downloader averaged_perceptron_tagger_eng cmudict
 
 EXPOSE 9871 9872 9873 9874 9880
 
